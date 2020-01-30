@@ -55,11 +55,21 @@ window.addEventListener("mouseup", () => {
 
 function changeColor(e) {
     if (isDown) {
-        e.target.classList.add("color-item");
+        if (e.target.style.opacity !== "") {
+            e.target.style.opacity = +(e.target.style.opacity) + 0.5;
+        } else {
+            e.target.style.backgroundColor = "green";
+            e.target.style.opacity = 0.2;
+        }
     }
 }
 
 function changeColorWithClick(e) {
-    e.target.classList.add("color-item");
+    if (e.target.style.opacity !== "") {
+        e.target.style.opacity = +(e.target.style.opacity) + 0.5;
+    } else {
+        e.target.style.backgroundColor = "green";
+        e.target.style.opacity = 0.2;
+    }
 }
 
