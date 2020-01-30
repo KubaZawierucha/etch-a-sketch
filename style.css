@@ -1,16 +1,81 @@
+.popup-div {
+    display: none;
+    z-index: 100;
+    background-color: rgba(0, 400, 400, 0.7);
+    position: fixed;
+    
+    font-size: 20px;
+
+    padding: 10px;
+
+    left: 50%;
+    top: 10%;
+    margin-left: -425px;
+
+    border: 6px solid black;
+
+    text-align: center;
+}
+
+.popup-div fieldset {
+    padding: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.popup-div fieldset input {
+    margin-left: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.popup-div fieldset input[type="submit"] {
+    margin-top: 80px;
+}
+
+.popup-div fieldset legend {
+    font-size: 40px;
+}
+
+#submitButton {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
 
-    width: 950px;
+    height: 800px;
+    width: 1600px;
+
     margin: auto;
+    
+    border: 1px solid black;
 }
 
 .item {
-    width: 56.5px;
-    height: 56.5px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.1);
+}
 
-    border: 1px solid black;
+.color-item {
+    background-color: green;
+}
+
+.reset-button-container {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#reset-btn {
+    font-size: 20px;
 }
