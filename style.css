@@ -5,15 +5,12 @@
     position: fixed;
     
     font-size: 20px;
-
     padding: 10px;
-
     left: 50%;
     top: 10%;
     margin-left: -425px;
 
     border: 6px solid black;
-
     text-align: center;
 }
 
@@ -66,16 +63,25 @@
     border: 1px solid rgba(0,0,0,0.1);
 }
 
-.color-item {
-    background-color: rgba(147, 170, 147, 0.1);
-}
-
 .reset-button-container {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    vertical-align: middle;
 }
 
 #reset-btn {
+    font-size: 20px;
+    margin-right: 50px;
+    vertical-align: top;
+}
+
+#colorPicker {
+    width: 75px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.reset-button-container label {
     font-size: 20px;
 }
